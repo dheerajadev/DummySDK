@@ -1,0 +1,11 @@
+framework module DummySDK {
+  umbrella header "DummySDK.h"
+
+  export *
+  module * { export * }
+}
+
+module DummySDK.Swift {
+    header "DummySDK-Swift.h"
+    requires objc
+}
